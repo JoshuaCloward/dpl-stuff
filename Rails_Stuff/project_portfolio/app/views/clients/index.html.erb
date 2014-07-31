@@ -1,0 +1,13 @@
+
+
+<h1> Index of Clients </h1>
+
+<ul>
+    <% @clients.each do |client| %>
+      <li>
+        <%= link_to(client.name, client_path(client.id)) %>
+        <%= client.name %>
+        <%= client.company %>
+      </li>
+    <% end %>
+</ul>

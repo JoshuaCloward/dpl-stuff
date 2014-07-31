@@ -1,0 +1,28 @@
+@import 'bootstrap';
+
+body{
+  background-color: white;
+}
+
+.notice{
+  text-align: center;
+
+  color: green;
+  border: solid 1px green;
+
+  background-color: #44ff44;
+}
+
+// .alert{
+// text-align: center;
+// color: #ee0000;
+// border: solid 1px;
+// border-color: #ee0000;
+//
+// background-color: #ff4444;
+// }
+
+.container{
+  background-color: #cccccc;
+
+}

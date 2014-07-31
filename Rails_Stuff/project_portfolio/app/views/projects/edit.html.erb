@@ -1,0 +1,19 @@
+<h1> Editing </h1>
+
+  <%= form_for(@project) do |p| %>
+
+  <div>
+    <%= p.label(:name) %>
+    <%= p.text_field(:client) %>
+  </div>
+
+  <div>
+    <%= p.label(:client) %>
+    <%= p.text_field(:client) %>
+  </div>
+
+
+  <div>
+    <%= p.submit('Save Product') %>
+  </div>
+<% end %>

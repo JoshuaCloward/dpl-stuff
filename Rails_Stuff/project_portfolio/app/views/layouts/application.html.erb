@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ProjectPortfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <%= link_to('Home Page', root_path, class: "links") %>
+        <span>&nbsp;|&nbsp;</span>
+        <%= link_to('View Projects', projects_path, class: "links") %>
+        <span>&nbsp;|&nbsp;</span>
+        <%= link_to('About Us', about_path, class: "links") %>
+      </nav>
+    </header>
+    <%= show_notice_message %>
+    <section id="main-content">
+      <%= yield %>
+    </section>
+    <footer>
+      copyright &copy; <%= Time.now.year %>
+    </footer>
+  </div>
+</body>
+</html>

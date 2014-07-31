@@ -1,0 +1,2 @@
+# chatter
+### a Sails application

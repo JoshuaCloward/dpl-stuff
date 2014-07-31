@@ -1,0 +1,41 @@
+
+
+.container{
+  width: 980px;
+  margin: 0 auto;
+}
+
+.row{
+  margin: 40px;
+  display: block;
+}
+
+.face-down{
+  width: 40px;
+  height: 40px;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid;
+  background-color: black;
+  display: inline;
+  float: left;
+}
+
+.face-up{
+  width: 40px;
+  height: 40px;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid;
+  background-color: white;
+  display: inline;
+  float: left;
+}
+
+.face-down span{
+  display: none;
+}
+
+.face-up span{
+  display: inline;
+}

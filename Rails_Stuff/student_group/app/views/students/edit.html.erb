@@ -1,0 +1,19 @@
+<h1> Editing <%= @student %> </h1>
+
+<%= form_for(@student) do |e| %>
+
+  <div>
+    <%= e.label(:name) %>
+    <%= e.text_field(:name) %>
+  </div>
+
+  <div>
+    <%= e.label(:course) %>
+    <%= e.text_field(:course) %>
+  </div>
+
+  <div>
+    <%= e.submit('Save Updated Student') %>
+  </div>
+
+<% end %>

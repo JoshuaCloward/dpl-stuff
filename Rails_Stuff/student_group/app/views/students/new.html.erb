@@ -1,0 +1,20 @@
+
+<h1> Adding a Student </h1>
+
+<%= form_for(@student) do |s| %>
+
+<div>
+<%= s.label(:name) %>
+<%= s.text_field(:name) %>
+</div>
+
+<div>
+<%= s.label(:course) %>
+<%= s.text_field(:course) %>
+</div>
+
+<div>
+  <%= s.submit('Save Student') %>
+</div>
+
+<% end %>

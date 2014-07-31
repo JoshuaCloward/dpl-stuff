@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RailsQuizzer</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar" role="navigation">
+        <div id="nav">
+          <a href="<%= root_path %>"><span class="links">Home Page</span>
+          <span class="links">&nbsp;|&nbsp;</span>
+          <a href="<%= questions_path %>"><span class="links">All Questions</span></a>
+          <span class="links">&nbsp;|&nbsp;</span>
+          <a href="<%= questionare_path %>"><span class="links">Questionare</span></a>
+          <!-- <h1 class="page-header"></h1> -->
+        </div>
+      </nav>
+    </header>
+    <section class="content-main">
+      <%= yield %>
+    </section>
+    <footer>
+    </footer>
+  </div>
+</body>
+</html>

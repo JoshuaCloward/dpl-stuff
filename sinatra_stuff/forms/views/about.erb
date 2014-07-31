@@ -1,0 +1,33 @@
+<h1>Person Info</h1>
+<ul>
+  <li>User: <%=@user%></li>
+  <li>Pass: <%=@pass%></li>
+
+  <li>Name: <%=@name %></li>
+
+  <li>Age: <%=@age%> </li>
+  <li>Sex: <%=@sex%></li>
+
+
+
+
+  <li> End:
+  <% @check.each do |checkc| %>
+     <%= checkc %>
+  <% end %>
+  </li>
+  <% if @front == "FrontEnd" && @back == "BackEnd" %>
+      <li>End: <%= @front %>, &nbsp;<%= @back %></li>
+  <% elsif @front == "FrontEnd" %>
+      <li>End: <%= @front %></li>
+  <% elsif @back == "BackEnd"%>
+      <li>End: <%= @back %></li>
+  <% end %>
+
+  <li>Lang: <%=@language%></li>
+  <li>Bio: <%=@bio%></li>
+  <li>Exp: <%=@exp%></li>
+</ul>
+<p>
+  <a href="/">&laquo; Back to home</a>
+</p>

@@ -1,0 +1,22 @@
+<h1 class="page-heade"> Questionare </h1>
+
+<!-- <p> Answered Correct: <%= @correct %> </p>
+<p> Answered Wrong:<%= @wrong %> </p> -->
+
+<h4><%=@out %></h4>
+
+<%= @question.name %>
+<ul>
+  <li>
+      <input type="radio" id="<%= @choices[0] %>" name="choice" value="<%= @choices[0] %>" onclick="resort(this)"> <span class="in"><%= @choices[0] %></span>
+  </li>
+  <li>
+      <input type="radio" id="<%= @choices[1] %>" name="choice" value="<%= @choices[1] %>" onclick="resort(this)"><span class="in"><%= @choices[1] %></span>
+  </li>
+  <li>
+    <input type="radio" id="<%= @choices[2] %>" name="choice" value="<%= @choices[2] %>" onclick="resort(this)"> <span class="in"><%= @choices[2] %></span>
+  </li>
+  <li>
+    <input type="radio" id="<%= @choices[3] %>" name="choice" value="<%= @choices[3] %>" onclick="resort(this)">  <span class="in"><%= @choices[3] %></span>
+  </li>
+</ul>

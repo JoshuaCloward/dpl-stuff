@@ -1,0 +1,17 @@
+
+
+<%= link_to('Create a New Project', new_project_path) %>
+
+<h1> Index of Projects </h1>
+
+<ul>
+  <% @projects.each do |project| %>
+    <li>
+      <%= link_to(project.name, project_path(project.id)) %>
+      <%= project.client %>
+      <%= link_to('Edit', edit_project_path(project.id)) %>
+      <%= link_to('Destroy', project_path(project.id), method: :delete,
+       'data-confirm' => 'Are you sure?') %>
+    </li>
+  <% end %>
+</ul>

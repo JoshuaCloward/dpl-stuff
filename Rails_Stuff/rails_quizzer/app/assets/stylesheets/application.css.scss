@@ -1,0 +1,47 @@
+@import 'bootstrap';
+@import 'font-awesome';
+
+body{
+background: transparent url('diamond_upholstery_@2X.png');
+}
+.container{
+  border-left: solid 1px;
+  border-right: solid 1px;
+  width: 500px;
+}
+
+.navbar{
+  text-align:center;
+  border-bottom: solid 1px;
+  padding-top: 20px;
+  min-height: 0px;
+  margin-bottom: 10px;
+
+}
+.links{
+  color: #000000;
+  margin-right: 15px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.links:hover{
+  background-color: #cccccc;
+  text-decoration: none;
+}
+.page-header{
+  margin-top: 20px;
+}
+
+footer{
+  padding: 50px;
+}
+
+ul li{
+  list-decoration: none;
+  padding: 5px;
+}
+
+.in{
+  margin-left: 5px;
+}

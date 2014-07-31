@@ -1,0 +1,10 @@
+<h1 class='head'> Teachers Hub </h1>
+<p class="edder"> Sharing Material One Course at a Time </p>
+
+
+<ul>
+<% @hits.each do |hit| %>
+<li class="hits"><%= hit.message %></li>
+<li><%= hit.created_at%> </li>
+<%end%>
+</ul>

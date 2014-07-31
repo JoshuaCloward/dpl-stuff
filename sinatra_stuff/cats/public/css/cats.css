@@ -1,0 +1,34 @@
+  #wrap
+    {
+      width: 980px;
+      margin: 0 auto;
+    }
+  #wrap h1
+    {
+      font-weight: 300;
+      font-family: Helvetica;
+      text-align: center;
+      border-bottom: 1px solid #333333;
+    }
+  .photo
+    {
+      padding: 8px;
+      width: 250px;
+      height: auto;
+      font-size: 0;
+      float: left;
+    }
+  .photo img
+    {
+      border-style:outset;
+      border: 100px;
+      width: 200%;
+    }
+  #car
+    {
+      width: 50%;
+    }
+  .link a
+    {
+      margin-right: 25px;
+    }

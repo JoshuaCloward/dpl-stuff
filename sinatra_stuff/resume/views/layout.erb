@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+        <link rel="stylesheet" href="/css/portfolio.css">
+        <script charset="utf-8" src="/js/main.js"></script>
+  </head>
+  <body id="bod">
+    <div id="wrap">
+      <div id="logo">
+        <img src="/images/logo.png"
+      </div>
+      <div id="title">
+        <h1> <%= @page_title %> </h1>
+      </div>
+
+      <div class="links">
+        <% if @page_title == "Home Page" %>
+
+            <a id="first"href="/first"> To go to First Page</a>
+            <a href="/second"> To go to Second Page</a>
+        <% elsif @page_title == "First Page" %>
+            <a id="home"href='/'> To go to Home Page</a>
+
+            <a id="second"href="/second"> To go to Second Page</a>
+        <% elsif @page_title == "Second Page" %>
+            <a id="home" href='/'> To go to Home Page</a>
+            <a id= "first" href="/first"> To go to First Page</a>
+        <% end %>
+      </div>
+
+
+        <%= yield %>
+
+    </div>
+  </body>
+</html>

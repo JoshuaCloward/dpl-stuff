@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Helvetica Neue';
+  font-size: 17px;
+  color: #ffffff;
+  background: transparent url('classy_fabric_@2X.png') repeat scroll center center;
+}
+
+#wrapper{
+  margin: 0 auto;
+  width: 980px;
+}
+
+  header{
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .links{
+    margin-right: 20px;
+    color: #ffffff;
+  }
+
+  .links:hover{
+    color: #bbbbbb;
+  }
+
+.flash-alert{
+  padding: 10px;
+  border: 1px solid #750202;
+  color: #750202;
+  font-size: 18px;
+  background-color: #ffadad;
+  font-weight: bold;
+}
+
+.flash-alert{
+  padding: 10px;
+  border: 1px solid #017505;
+  color: #017505;
+  font-size: 18px;
+  background-color: #b5ffb2;
+  font-weight: bold;
+}
+#main-content{
+
+}
+  footer{
+    border-top: 1px solid;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+  }

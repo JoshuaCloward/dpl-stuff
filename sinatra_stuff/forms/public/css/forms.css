@@ -1,0 +1,8 @@
+#wrap
+{
+  width: 80%;
+  margin: 0 auto;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  padding: 15px;
+}

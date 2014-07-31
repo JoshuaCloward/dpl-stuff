@@ -1,0 +1,58 @@
+
+<form action="/about" method="post">
+
+  <p>
+    <label>Username:</label>
+    <input type='text' name='user' />
+  </p>
+
+  <p>
+    <label>Password: </label>
+    <input type="password" id="pass">
+  </p>
+
+  <p>
+    <label>Name:</label>
+    <input type="text" name="name" />
+  </p>
+
+  <p>
+    <label>Age:</label>
+    <input type="text" name="age" />
+  </p>
+
+
+  <p class="radio">
+    <label>Sex:</label>
+    <input type="radio" name="sex" value="male">Male
+    <input type="radio" name="sex" value="female">Female
+  </p>
+
+  <p class="checkbox">
+    <input type="checkbox" name="check[]" value="FrontEnd">Front End
+    <input type="checkbox" name="check[]" value="BackEnd">Back End
+  </p>
+
+  <p>
+    <label>Programming Language:</label>
+    <select name="language">
+      <option value="Ruby">Ruby</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Whiespace"></option>
+      <option value="BrainF**k">>><<+\|</option>
+    </select>
+  </p>
+
+  </p>
+    <label>Bio:</label><br />
+    <textarea name="bio" rows="8" cols="40"></textarea>
+  </p>
+
+  <p>
+    <label>Past Expirience: </label> <br />
+    <textarea name="exp" rows="8" cols="40"></textarea>
+  </p>
+
+  <input type="submit" value="Send Data" />
+
+</form>
